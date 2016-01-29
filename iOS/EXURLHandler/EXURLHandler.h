@@ -1,8 +1,7 @@
-@import Foundation;
+#import <AVFoundation/AVFoundation.h>
+#import "RCTBridgeModule.h"
 
-#import <React/React.h>
-
-@interface EXURLHandler : NSObject <RCTBridgeModule>
+@interface EXURLHandler : NSObject<RCTBridgeModule>
 
 + (BOOL)openInternalURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
 
